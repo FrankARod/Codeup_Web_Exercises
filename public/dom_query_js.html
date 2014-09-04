@@ -23,40 +23,41 @@
         culpa qui officia deserunt mollit anim id est laborum.
     </p>
 
+    <button id="changeMainHeader">Change Main Header</button>
+    <button id="changeSubHeader">Change Sub-Header</button>
+    <button id="changeList">Alter List</button>
+    <button id="missionAccomplished">Accomplish Misson</button>
+
     <script>
-
-        // todo: get the main header element by id
         var mainHeader = document.getElementById('main-header');
-
-        // todo: set inner html of mainHeader to "JavaScript is Cool"
-        mainHeader.innerHTML = 'JavaScript is Cool';
-
-        // todo: get the sub header element by id
         var subHeader = document.getElementById('sub-header');
-
-        // todo: set the text color of subHeader to blue
-        subHeader.style['color'] = 'blue';
-
-        // todo: get all list items
         var listItems = document.getElementsByTagName('li');
-
-        // todo: set text color on every other list item to grey
-        for (var i = 0; i < listItems.length; i+=2) {
-            listItems[i].style['color'] = 'grey';
-            if (listItems[i].attributes['data-dbid'].value == "1") {
-                listItems[i].style['color'] = 'blue';
-            }
-        }
-        
-        // todo: set text color of li with dbid = 1 to blue
-
-
-        // todo: get all elements with class name sub-paragraph
         var subParagraphs = document.getElementsByClassName('sub-paragraph');
+        var main = document.getElementById('changeMainHeader');
+        var sub = document.getElementById('changeSubHeader');
+        var list = document.getElementById('changeList');
+        var accomplish = document.getElementById('missionAccomplished');
 
-        // todo: change the text in the first sub paragraph to "Mission Accomplished!"
-        subParagraphs[0].innerHTML = 'Mission Accomplished!';
+        main.addEventListener("click", function() {
+            mainHeader.innerHTML = 'JavaScript is Cool';     
+        });
 
+        sub.addEventListener("click", function() {
+            subHeader.style['color'] = 'blue';     
+        });
+
+        list.addEventListener("click", function() {
+            for (var i = 0; i < listItems.length; i+=2) {
+                listItems[i].style['color'] = 'grey';
+                if (listItems[i].attributes['data-dbid'].value == "1") {
+                    listItems[i].style['color'] = 'blue';
+                }
+            }     
+        });
+
+        accomplish.addEventListener("click", function() {
+            subParagraphs[0].innerHTML = 'Mission Accomplished!';     
+        });
     </script>
 
 </body>
