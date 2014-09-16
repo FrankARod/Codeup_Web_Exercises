@@ -1,31 +1,31 @@
 <script type="text/javascript">
-    // create a circle object
-    var circle = {
-        radius: 3,
-        getArea: function () {
-            // todo: finish this method
-            // hint: area = pi * radius^2
-            return Math.pow(this.radius, 2) * Math.PI;
-        },
-        logInfo: function (round) {
-            // todo: complete this method. if round is true, round the result to the nearest integer.
-            var loggedArea = this.getArea(this.radius);
-            if (round) {
-                loggedArea = Math.round(loggedArea);
-            }
-            console.log('Area of a circle with radius: ' + this.radius + ', is: ' + loggedArea);
-        }
-    };
+	// create a circle object
+	var circle = {
+		radius: 3,
+		getArea: function () {
+			// todo: finish this method
+			// hint: area = pi * radius^2
+			return Math.pow(this.radius, 2) * Math.PI;
+		},
+		logInfo: function (round) {
+			// todo: complete this method. if round is true, round the result to the nearest integer.
+			var loggedArea = this.getArea(this.radius);
+			if (round) {
+				loggedArea = Math.round(loggedArea);
+			}
+			console.log('Area of a circle with radius: ' + this.radius + ', is: ' + loggedArea);
+		}
+	};
 
-    // log info about the circle
-    circle.logInfo(false);
-    circle.logInfo(true);
+	// log info about the circle
+	circle.logInfo(false);
+	circle.logInfo(true);
 
-    // todo:
-    // Change the radius of the circle to 5.
-    circle.radius = 5;
+	// todo:
+	// Change the radius of the circle to 5.
+	circle.radius = 5;
 
-    // log info about the circle
-    circle.logInfo(false);
-    circle.logInfo(true);
+	// log info about the circle
+	circle.logInfo(false);
+	circle.logInfo(true);
 </script>

@@ -1,0 +1,11 @@
+#mainBody {
+  margin-top: 100px;
+}
+
+.blogPost {
+  margin-bottom: 50px;
+}
+
+.blogPost h1 {
+  border-bottom: solid;
+}

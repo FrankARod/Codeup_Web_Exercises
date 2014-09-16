@@ -1,0 +1,50 @@
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap-theme.css">
+	<script type="text/javascript" src="/bootstra/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<h1>Stop Watch</h1>
+		<div class="row">
+			<div class="jumbotron">
+				<h2 id="display"></h2>
+			</div>
+		</div>
+		<button id="startButton">Start</button>
+		<button id="stopButton">Stop</button>
+		<button id="resetButton">Reset</button>
+	</div>
+
+	<script type="text/javascript">
+		var time = 0;
+		var intervalId;
+		var startButton = document.getElementById('startButton');
+		var stopButton = document.getElementById('stopButton');
+		var resetButton = document.getElementById('resetButton');
+		var display = document.getElementById('display');
+
+		var startEvent = function() {
+			intervalId = setInterval(function () {
+				time ++;
+				display.innerHTML = (time/10);
+			}, 100);
+			startButton.removeEventListener("click", startEvent);
+		}
+
+		startButton.addEventListener("click", startEvent);
+
+		stopButton.addEventListener("click", function () {
+			clearInterval(intervalId);
+			startButton.addEventListener("click", startEvent);
+		});
+
+		resetButton.addEventListener("click", function () {
+			time = 0;
+			display.innerHTML = time;
+		});
+	</script>
+</body>
+</html>
