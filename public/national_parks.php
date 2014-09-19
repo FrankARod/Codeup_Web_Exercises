@@ -1,7 +1,7 @@
 <?php
 	require("../dbconnect.php");
 	
-	// User Input //
+	// User Input
 	if (isset($_GET['page'])) {
 		$this_page = $_GET['page'];
 		$offset = ($this_page - 1) * 4;
@@ -22,8 +22,8 @@
 		}
 	}
 	
+	//Writes to db
 	if ($valid) {
-		var_dump($_POST);
 		$insert = "INSERT INTO national_parks (name, location, date_established, area_in_acres, description) VALUES (:name, :location, :date_established, :area_in_acres, :description)";
 		$add_to_db = $dbc->prepare($insert);
 		$add_to_db->bindValue(':name', $_POST['name'], PDO::PARAM_STR);
@@ -98,23 +98,23 @@
 			<form method="POST" action="national_parks.php" role="form" class="form-horizontal">
 				<div class="form-group">	
 					<label for="name">Name</label>
-					<input type="text" name="name" id="name" placeholder="Name" class="form-control">
+					<input type="text" name="name" id="name" placeholder="Enter Name..." class="form-control" required>
 				</div>	
 				<div class="form-group">
 					<label for="location">Location</label>
-					<input type="text" name="location" id="location" placeholder="Location" class="form-control">
+					<input type="text" name="location" id="location" placeholder="Enter Location..." class="form-control" required>
 				</div>
 				<div class="form-group">
 					<label for="date_established">Date Established</label>
-					<input type="date" name="date_established" id="date_established" class="form-control">
+					<input type="date" name="date_established" id="date_established" class="form-control" placeholder="Enter Date Established (YYYY-MM-DD)" required>
 				</div>	
 				<div class="form-group">	
 					<label for="area_in_acres">Area in Acres</label>
-					<input type="number" name="area_in_acres" id="area_in_acres" placeholder="Area in Acres" class="form-control">
+					<input type="number" name="area_in_acres" id="area_in_acres" placeholder="Enter Area in Acres..." class="form-control" required>
 				</div>	
 				<div class="form-group">
 					<label for="description">Description</label>
-					<textarea id="description" name="description" placeholder="Description" class="form-control"></textarea>
+					<textarea id="description" name="description" placeholder="Enter Description..." class="form-control" required></textarea>
 				</div>
 				<input type="submit" class="btn btn-default">
 			</form>
