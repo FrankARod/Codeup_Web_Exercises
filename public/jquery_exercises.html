@@ -4,9 +4,15 @@
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 </head>
 <body>
+	<h1></h1>
+	<p id="p_id">This is a paragraph</p>
+	<ul class="lists"></ul>
+	<li class="lists"></li>
+	<div></div>
 	<script type="text/javascript">
 		$(document).ready(function() {
-			alert("Document is ready!");
+			var id = $('#p_id').html();
+			alert(id);
 		});
 	</script>
 </body>
