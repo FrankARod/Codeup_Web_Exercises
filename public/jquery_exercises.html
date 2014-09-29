@@ -16,8 +16,24 @@
 	</div>
 	<script type="text/javascript">
 		$('document').ready(function () {
-			$('li, p, h1').css('background-color', 'yellow');
-		}());
+			
+			$('h1').click(function() {
+				$(this).css('background-color', 'yellow');
+			});
+			
+			$('p').click(function() {
+				$(this).css('font-size', '18px');
+			});
+			
+			$('li').hover(
+				function () {
+					$(this).css('color', 'red');
+				},
+				function () {
+					$(this).css('color', 'white');
+				}
+			);
+		});
 	</script>
 </body>
 </html>
