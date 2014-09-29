@@ -15,7 +15,12 @@
 		<p id="codeup">This is in a div</p>
 	</div>
 	<script type="text/javascript">
-		$('li').css('font-size', '20px');
+		$('document').ready(function () {
+			$('li').css('font-size', '20px');
+			var $h1 = $('h1').html();
+			$('p');
+			alert($h1);
+		}());
 	</script>
 </body>
 </html>
