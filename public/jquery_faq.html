@@ -13,7 +13,7 @@
 	<script type="text/javascript">
 		$('document').ready(function() {
 			$('a').click(function () {
-				$('dd').toggleClass('invisible');
+				$('dd').toggle();
 			});
 			var $ul = $('ul');
 			
@@ -22,7 +22,7 @@
 			});
 			
 			$('li').click(function () {
-				$(this).parent('ul').toggleClass('invisible');
+				$(this).parent('ul').hide();
 			});
 		});
 	</script>
