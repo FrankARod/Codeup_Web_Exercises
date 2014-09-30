@@ -9,11 +9,12 @@
 	</style>
 	
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-	
+	<script type="text/javascript" src="https://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.10.4/themes/black-tie/jquery-ui.css">
 	<script type="text/javascript">
 		$('document').ready(function() {
 			$('a').click(function () {
-				$('dd').fadeToggle();
+				$('dd').slideToggle();
 			});
 			var $ul = $('ul');
 			
@@ -21,19 +22,16 @@
 				$(this).children().first().css('font-weight', 'bold');
 			});
 			
-			// $('li').click(function () {
-			// 	$(this).parent('ul').hide();
-			// });
 			$('.carlsbad').click(function () {
-				$('.carlsbad-toggle').fadeToggle();
+				$('.carlsbad-toggle').slideToggle();
 			});
 
 			$('.jellystone').click(function () {
-				$('.jellystone-list').fadeToggle();
+				$('.jellystone-list').slideToggle();
 			});
 
 			$('.other').click(function () {
-				$('.other-toggle').fadeToggle();
+				$('.other-toggle').slideToggle();
 			});
 		});
 	</script>

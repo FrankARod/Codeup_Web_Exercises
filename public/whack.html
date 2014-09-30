@@ -1,16 +1,40 @@
 <html>
 <head>
 	<title></title>
+	<style type="text/css">
+		#left {
+			height: 100%;
+			width: 33%;
+			float: left;
+		}
+		#container: {
+			height: 33%;
+			float: left;
+			position: relative;
+		}
+		#container>img {
+			height: 33%;
+			position: relative;
+			left: 30px;
+			bottom: 10px;
+		}
+	</style>
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript">
 		$('document').ready(function () {
 			$('img').click(function () {
-				$(this).fadeToggle();
+				$(this).slideToggle(30000);
 			});
 		});
 	</script>
 </head>
 <body>
-	<img src="img/chihuahua.png">
+	<div id="left"></div>
+	<div id="vacuum">
+		<img src="img/vacuum.jpg">
+	</div>
+	<div id="container">
+		<img src="img/chihuahua.png">
+	</div>
 </body>
 </html>
