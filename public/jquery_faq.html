@@ -13,7 +13,7 @@
 	<script type="text/javascript">
 		$('document').ready(function() {
 			$('a').click(function () {
-				$('dd').toggle();
+				$('dd').fadeToggle();
 			});
 			var $ul = $('ul');
 			
@@ -21,8 +21,19 @@
 				$(this).children().first().css('font-weight', 'bold');
 			});
 			
-			$('li').click(function () {
-				$(this).parent('ul').hide();
+			// $('li').click(function () {
+			// 	$(this).parent('ul').hide();
+			// });
+			$('.carlsbad').click(function () {
+				$('.carlsbad-toggle').fadeToggle();
+			});
+
+			$('.jellystone').click(function () {
+				$('.jellystone-list').fadeToggle();
+			});
+
+			$('.other').click(function () {
+				$('.other-toggle').fadeToggle();
 			});
 		});
 	</script>
@@ -51,27 +62,27 @@
 		<dd class="invisible">The largest living things in the world are in National Parks: Sequoia trees and Alaskan brown bears (the world’s largest living carnivores).</dd>
 	</dl>
 	<a href="#">Reveal</a>
-	<h3>Carlsbad</h3>
+	<h3 class="carlsbad">Carlsbad</h3>
 
-	<ul>
+	<ul class="carlsbad-toggle">
 		<li>Kramer: Hey, you know what would make a great coffee table book? A coffee table book about coffee tables. Jerry: You sure have a lot of friends. How come I never see any of these people? Kramer: They want to know why they never see you. Jerry: Sometimes the road less traveled is less traveled for a reason. Me too., Kramer: And is there a tree? Frank: No. Instead, there's a pole. Requires no decoration. I find tinsel distracting. Jerry: You were in the Army? Kramer: Briefly. George: I can not express to you the feeling I get from a perfect airport pickup. Jerry: A bookstore is one of the only pieces of evidence we have that people are still thinking. George: Frolf, frisbee golf, Jerry. Golf with a frisbee. They just wake up one morning and go, 'Oh my god, there's a tree inside the house.</li>
 		<li>Kramer: Hey, you know what would make a great coffee table book? A coffee table book about coffee tables. Jerry: You sure have a lot of friends. How come I never see any of these people? Kramer: They want to know why they never see you. Jerry: Sometimes the road less traveled is less traveled for a reason. Me too., Kramer: And is there a tree? Frank: No. Instead, there's a pole. Requires no decoration. I find tinsel distracting. Jerry: You were in the Army? Kramer: Briefly. George: I can not express to you the feeling I get from a perfect airport pickup. Jerry: A bookstore is one of the only pieces of evidence we have that people are still thinking. George: Frolf, frisbee golf, Jerry. Golf with a frisbee. They just wake up one morning and go, 'Oh my god, there's a tree inside the house.</li>
 		<li>Kramer: Hey, you know what would make a great coffee table book? A coffee table book about coffee tables. Jerry: You sure have a lot of friends. How come I never see any of these people? Kramer: They want to know why they never see you. Jerry: Sometimes the road less traveled is less traveled for a reason. Me too., Kramer: And is there a tree? Frank: No. Instead, there's a pole. Requires no decoration. I find tinsel distracting. Jerry: You were in the Army? Kramer: Briefly. George: I can not express to you the feeling I get from a perfect airport pickup. Jerry: A bookstore is one of the only pieces of evidence we have that people are still thinking. George: Frolf, frisbee golf, Jerry. Golf with a frisbee. They just wake up one morning and go, 'Oh my god, there's a tree inside the house.</li>
 		<li>Kramer: Hey, you know what would make a great coffee table book? A coffee table book about coffee tables. Jerry: You sure have a lot of friends. How come I never see any of these people? Kramer: They want to know why they never see you. Jerry: Sometimes the road less traveled is less traveled for a reason. Me too., Kramer: And is there a tree? Frank: No. Instead, there's a pole. Requires no decoration. I find tinsel distracting. Jerry: You were in the Army? Kramer: Briefly. George: I can not express to you the feeling I get from a perfect airport pickup. Jerry: A bookstore is one of the only pieces of evidence we have that people are still thinking. George: Frolf, frisbee golf, Jerry. Golf with a frisbee. They just wake up one morning and go, 'Oh my god, there's a tree inside the house.</li>
 	</ul>
 	
-	<h3>Yellowstone National Park</h3>
+	<h3 class="jellystone">Yellowstone National Park</h3>
 	
-	<ul>
+	<ul class="jellystone-list">
 		<li>Kramer: Hey, you know what would make a great coffee table book? A coffee table book about coffee tables. Jerry: You sure have a lot of friends. How come I never see any of these people? Kramer: They want to know why they never see you. Jerry: Sometimes the road less traveled is less traveled for a reason. Me too., Kramer: And is there a tree? Frank: No. Instead, there's a pole. Requires no decoration. I find tinsel distracting. Jerry: You were in the Army? Kramer: Briefly. George: I can not express to you the feeling I get from a perfect airport pickup. Jerry: A bookstore is one of the only pieces of evidence we have that people are still thinking. George: Frolf, frisbee golf, Jerry. Golf with a frisbee. They just wake up one morning and go, 'Oh my god, there's a tree inside the house.</li>
 		<li>Kramer: Hey, you know what would make a great coffee table book? A coffee table book about coffee tables. Jerry: You sure have a lot of friends. How come I never see any of these people? Kramer: They want to know why they never see you. Jerry: Sometimes the road less traveled is less traveled for a reason. Me too., Kramer: And is there a tree? Frank: No. Instead, there's a pole. Requires no decoration. I find tinsel distracting. Jerry: You were in the Army? Kramer: Briefly. George: I can not express to you the feeling I get from a perfect airport pickup. Jerry: A bookstore is one of the only pieces of evidence we have that people are still thinking. George: Frolf, frisbee golf, Jerry. Golf with a frisbee. They just wake up one morning and go, 'Oh my god, there's a tree inside the house.</li>
 		<li>Kramer: Hey, you know what would make a great coffee table book? A coffee table book about coffee tables. Jerry: You sure have a lot of friends. How come I never see any of these people? Kramer: They want to know why they never see you. Jerry: Sometimes the road less traveled is less traveled for a reason. Me too., Kramer: And is there a tree? Frank: No. Instead, there's a pole. Requires no decoration. I find tinsel distracting. Jerry: You were in the Army? Kramer: Briefly. George: I can not express to you the feeling I get from a perfect airport pickup. Jerry: A bookstore is one of the only pieces of evidence we have that people are still thinking. George: Frolf, frisbee golf, Jerry. Golf with a frisbee. They just wake up one morning and go, 'Oh my god, there's a tree inside the house.</li>
 		<li>Kramer: Hey, you know what would make a great coffee table book? A coffee table book about coffee tables. Jerry: You sure have a lot of friends. How come I never see any of these people? Kramer: They want to know why they never see you. Jerry: Sometimes the road less traveled is less traveled for a reason. Me too., Kramer: And is there a tree? Frank: No. Instead, there's a pole. Requires no decoration. I find tinsel distracting. Jerry: You were in the Army? Kramer: Briefly. George: I can not express to you the feeling I get from a perfect airport pickup. Jerry: A bookstore is one of the only pieces of evidence we have that people are still thinking. George: Frolf, frisbee golf, Jerry. Golf with a frisbee. They just wake up one morning and go, 'Oh my god, there's a tree inside the house.</li>
 	</ul>
 	
-	<h3>Some other park</h3>
+	<h3 class="other">Some other park</h3>
 	
-	<ul>
+	<ul class="other-toggle">
 		<li>Sample fact 1</li>
 		<li>Sample fact 2</li>
 		<li>Sample fact 3</li>
